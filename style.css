@@ -17,6 +17,8 @@ header {
 .tittle {
   color: black;
   font-size: 75px;
+  border-bottom: solid black 5px;
+  padding-bottom: 50px;
 }
 
 header ul {
@@ -35,7 +37,7 @@ header ul li:hover {
 }
 main {
   background-color: black;
-  border: burlywood solid 1px;
+  /* border: burlywood solid 3px; */
 }
 h1 {
   font-size: 50px;
@@ -53,7 +55,6 @@ h1 {
 }
 
 .breakfastCombo {
-  border: brown solid;
   width: 23%;
   font-size: 25px;
   background-color: burlywood;
@@ -62,7 +63,6 @@ h1 {
 .breakfast .breakfastCombo:hover {
   opacity: 1.5;
   scale: 1.2;
-  background-color: #8b0000;
   cursor: pointer;
 }
 .lunch {
@@ -73,7 +73,6 @@ h1 {
   padding-bottom: 145px;
 }
 .lunchCombo {
-  border: brown solid;
   width: 23%;
   font-size: 25px;
   background-color: burlywood;
@@ -82,7 +81,6 @@ h1 {
 .lunch .lunchCombo:hover {
   opacity: 1.5;
   scale: 1.2;
-  background-color: #8b0000;
   cursor: pointer;
 }
 .dinner {
@@ -93,7 +91,6 @@ h1 {
   padding-bottom: 145px;
 }
 .dinnerCombo {
-  border: brown solid;
   width: 23%;
   font-size: 25px;
   background-color: burlywood;
@@ -102,7 +99,6 @@ h1 {
 .dinner .dinnerCombo:hover {
   opacity: 1.5;
   scale: 1.2;
-  background-color: #8b0000;
   cursor: pointer;
 }
 .drinks {
