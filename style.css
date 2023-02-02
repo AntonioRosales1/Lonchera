@@ -60,11 +60,11 @@ h1 {
   background-color: #8b0000;
   padding-bottom: 120px;
 }
-.breakfast .breakfastCombo:hover {
+/* .breakfast .breakfastCombo:hover {
   opacity: 1.5;
   scale: 1.2;
   cursor: pointer;
-}
+} */
 .lunch {
   padding-top: 145px;
   display: flex;
@@ -78,11 +78,11 @@ h1 {
   background-color: #8b0000;
   padding-bottom: 120px;
 }
-.lunch .lunchCombo:hover {
+/* .lunch .lunchCombo:hover {
   opacity: 1.5;
   scale: 1.2;
   cursor: pointer;
-}
+} */
 .dinner {
   padding-top: 145px;
   display: flex;
@@ -96,11 +96,11 @@ h1 {
   background-color: #8b0000;
   padding-bottom: 120px;
 }
-.dinner .dinnerCombo:hover {
+/* .dinner .dinnerCombo:hover {
   opacity: 1.5;
   scale: 1.2;
   cursor: pointer;
-}
+} */
 .drinks {
   color: #8b0000;
   font-size: 30px;
