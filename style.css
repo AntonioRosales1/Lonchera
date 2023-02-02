@@ -57,7 +57,7 @@ h1 {
 .breakfastCombo {
   width: 23%;
   font-size: 25px;
-  background-color: burlywood;
+  background-color: #8b0000;
   padding-bottom: 120px;
 }
 .breakfast .breakfastCombo:hover {
@@ -75,7 +75,7 @@ h1 {
 .lunchCombo {
   width: 23%;
   font-size: 25px;
-  background-color: burlywood;
+  background-color: #8b0000;
   padding-bottom: 120px;
 }
 .lunch .lunchCombo:hover {
@@ -93,7 +93,7 @@ h1 {
 .dinnerCombo {
   width: 23%;
   font-size: 25px;
-  background-color: burlywood;
+  background-color: #8b0000;
   padding-bottom: 120px;
 }
 .dinner .dinnerCombo:hover {
@@ -139,4 +139,8 @@ footer ul li {
 footer ul li:hover {
   opacity: 0.5;
   scale: 1.2;
+}
+.created {
+  color: black;
+  font-size: 20px;
 }
