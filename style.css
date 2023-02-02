@@ -1,21 +1,46 @@
 body {
-  background-color: burlywood;
+  background-color: #8b0000;
 }
 img {
   width: 40%;
   height: 40%;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+
 header {
-  border-bottom: solid brown 5px;
+  border-bottom: solid burlywood 1px;
   font-size: 27px;
 }
+.tittle {
+  color: black;
+  font-family: cursive;
+}
+
 header ul {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
+}
+header ul li {
+  border: solid burlywod;
+  border-radius: 3px;
+  padding: 6px;
+}
+header ul li:hover {
+  opacity: 0.5;
+  scale: 1.2;
+}
+main {
+  background-color: black;
+  /* color: #8b0000; */
 }
 h1 {
   text-align: center;
   padding-top: 50px;
+  color: #8b0000;
 }
 .breakfast {
   padding-top: 145px;
@@ -23,15 +48,18 @@ h1 {
   justify-content: space-evenly;
   text-align: center;
   padding-bottom: 145px;
-  /* border-bottom: solid black 5px; */
 }
 
 .breakfastCombo {
   border: brown solid;
-  border-radius: 25px;
   width: 30%;
   font-size: 25px;
   background-color: burlywood;
+}
+.breakfast .breakfastCombo:hover {
+  opacity: 1.5;
+  scale: 1.2;
+  background-color: #8b0000;
 }
 .lunch {
   padding-top: 145px;
@@ -39,14 +67,17 @@ h1 {
   justify-content: space-evenly;
   text-align: center;
   padding-bottom: 145px;
-  /* border-bottom: solid black 5px; */
 }
 .lunchCombo {
   border: brown solid;
-  border-radius: 25px;
   width: 30%;
   font-size: 25px;
   background-color: burlywood;
+}
+.lunch .lunchCombo:hover {
+  opacity: 1.5;
+  scale: 1.2;
+  background-color: #8b0000;
 }
 .dinner {
   padding-top: 145px;
@@ -57,16 +88,34 @@ h1 {
 }
 .dinnerCombo {
   border: brown solid;
-  border-radius: 25px;
   width: 30%;
   font-size: 25px;
   background-color: burlywood;
   padding-bottom: 120px;
 }
+.dinner .dinnerCombo:hover {
+  opacity: 1.5;
+  scale: 1.2;
+  background-color: #8b0000;
+}
 footer {
-  padding-top: 20px;
-  border-top: brown solid 5px;
+  /* padding-top: 120px; */
+  border-top: burlywood solid 1px;
 
   text-align: center;
   display: block;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul li {
+  border-radius: 1px;
+  padding: 6px;
+  font-size: 25px;
+}
+footer ul li:hover {
+  opacity: 0.5;
+  scale: 1.2;
 }
