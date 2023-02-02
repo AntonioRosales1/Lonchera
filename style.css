@@ -1,9 +1,10 @@
 body {
   background-color: #8b0000;
+  font-family: fantasy;
 }
 img {
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
 }
 a {
   color: black;
@@ -11,12 +12,11 @@ a {
 }
 
 header {
-  border-bottom: solid burlywood 1px;
   font-size: 27px;
 }
 .tittle {
   color: black;
-  font-family: cursive;
+  font-size: 75px;
 }
 
 header ul {
@@ -35,9 +35,11 @@ header ul li:hover {
 }
 main {
   background-color: black;
-  /* color: #8b0000; */
+  border: burlywood solid 1px;
 }
 h1 {
+  font-size: 50px;
+  font-weight: 200;
   text-align: center;
   padding-top: 50px;
   color: #8b0000;
@@ -52,7 +54,7 @@ h1 {
 
 .breakfastCombo {
   border: brown solid;
-  width: 30%;
+  width: 23%;
   font-size: 25px;
   background-color: burlywood;
 }
@@ -60,6 +62,7 @@ h1 {
   opacity: 1.5;
   scale: 1.2;
   background-color: #8b0000;
+  cursor: pointer;
 }
 .lunch {
   padding-top: 145px;
@@ -70,7 +73,7 @@ h1 {
 }
 .lunchCombo {
   border: brown solid;
-  width: 30%;
+  width: 23%;
   font-size: 25px;
   background-color: burlywood;
 }
@@ -78,6 +81,7 @@ h1 {
   opacity: 1.5;
   scale: 1.2;
   background-color: #8b0000;
+  cursor: pointer;
 }
 .dinner {
   padding-top: 145px;
@@ -88,7 +92,7 @@ h1 {
 }
 .dinnerCombo {
   border: brown solid;
-  width: 30%;
+  width: 23%;
   font-size: 25px;
   background-color: burlywood;
   padding-bottom: 120px;
@@ -97,11 +101,24 @@ h1 {
   opacity: 1.5;
   scale: 1.2;
   background-color: #8b0000;
+  cursor: pointer;
+}
+.drinks {
+  color: #8b0000;
+  font-size: 30px;
+}
+
+.drinks ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 15%;
+}
+.drinks ul li {
+  list-style: square;
+  padding-top: 10%;
 }
 footer {
-  /* padding-top: 120px; */
-  border-top: burlywood solid 1px;
-
   text-align: center;
   display: block;
 }
