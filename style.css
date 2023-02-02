@@ -10,14 +10,29 @@ a {
   color: black;
   text-decoration: none;
 }
+h4 {
+  color: yellow;
+}
+marquee {
+  color: yellow;
+  font-size: 25px;
+  border-bottom: solid yellow 2px;
+}
+
+.inaguration_scroll {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
 
 header {
   font-size: 27px;
+  border-bottom: solid yellow 5px;
 }
 .tittle {
   color: black;
   font-size: 75px;
-  border-bottom: solid black 5px;
+  border-bottom: solid yellow 5px;
   padding-bottom: 50px;
 }
 
@@ -27,7 +42,6 @@ header ul {
   list-style: none;
 }
 header ul li {
-  border: solid burlywod;
   border-radius: 3px;
   padding: 6px;
 }
@@ -37,7 +51,6 @@ header ul li:hover {
 }
 main {
   background-color: black;
-  /* border: burlywood solid 3px; */
 }
 h1 {
   font-size: 50px;
@@ -45,6 +58,7 @@ h1 {
   text-align: center;
   padding-top: 50px;
   color: #8b0000;
+  /* text-decoration: underline 2px yellow; */
 }
 .breakfast {
   padding-top: 145px;
@@ -143,4 +157,11 @@ footer ul li:hover {
 .created {
   color: black;
   font-size: 20px;
+}
+.map {
+  padding-top: 145px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 145px;
 }
