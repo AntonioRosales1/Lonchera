@@ -1,0 +1,72 @@
+body {
+  background-color: burlywood;
+}
+img {
+  width: 40%;
+  height: 40%;
+}
+header {
+  border-bottom: solid brown 5px;
+  font-size: 27px;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+.breakfast {
+  padding-top: 145px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 145px;
+  /* border-bottom: solid black 5px; */
+}
+
+.breakfastCombo {
+  border: brown solid;
+  border-radius: 25px;
+  width: 30%;
+  font-size: 25px;
+  background-color: burlywood;
+}
+.lunch {
+  padding-top: 145px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 145px;
+  /* border-bottom: solid black 5px; */
+}
+.lunchCombo {
+  border: brown solid;
+  border-radius: 25px;
+  width: 30%;
+  font-size: 25px;
+  background-color: burlywood;
+}
+.dinner {
+  padding-top: 145px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 145px;
+}
+.dinnerCombo {
+  border: brown solid;
+  border-radius: 25px;
+  width: 30%;
+  font-size: 25px;
+  background-color: burlywood;
+  padding-bottom: 120px;
+}
+footer {
+  padding-top: 20px;
+  border-top: brown solid 5px;
+
+  text-align: center;
+  display: block;
+}
