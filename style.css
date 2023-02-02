@@ -57,6 +57,7 @@ h1 {
   width: 23%;
   font-size: 25px;
   background-color: burlywood;
+  padding-bottom: 120px;
 }
 .breakfast .breakfastCombo:hover {
   opacity: 1.5;
@@ -76,6 +77,7 @@ h1 {
   width: 23%;
   font-size: 25px;
   background-color: burlywood;
+  padding-bottom: 120px;
 }
 .lunch .lunchCombo:hover {
   opacity: 1.5;
@@ -117,6 +119,12 @@ h1 {
 .drinks ul li {
   list-style: square;
   padding-top: 10%;
+}
+.comments {
+  /* background-color: aliceblue; */
+  display: block;
+  text-align: center;
+  justify-content: space-between;
 }
 footer {
   text-align: center;
