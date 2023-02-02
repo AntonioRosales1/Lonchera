@@ -11,12 +11,14 @@ a {
   text-decoration: none;
 }
 h4 {
-  color: yellow;
+  color: black;
 }
 marquee {
-  color: yellow;
+  color: black;
   font-size: 25px;
-  border-bottom: solid yellow 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* border-bottom: solid black 2px; */
 }
 
 .inaguration_scroll {
@@ -27,12 +29,12 @@ marquee {
 
 header {
   font-size: 27px;
-  border-bottom: solid yellow 5px;
+  border-bottom: solid black 5px;
 }
 .tittle {
   color: black;
   font-size: 75px;
-  border-bottom: solid yellow 5px;
+  border-bottom: solid black 5px;
   padding-bottom: 50px;
 }
 
