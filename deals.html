@@ -4,90 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Lonchera</title>
   </head>
   <body>
     <header>
-        
-        <h1 class="tittle">Lonchera</h1>
+      <h1 class="tittle">
+        <img class="img_logo" src="./imgs/Logo.svg" alt="" />Lonchera
+      </h1>
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./spanish.html">Espanol</a></li>
         <li><a href="./deals.html">Daily Specials</a></li>
         <li><a href="./Location.html">Location</a></li>
-
-      
       </ul>
-      <marquee scrollamount="15"  behavior="scroll" direction="left" class="inaguration_scroll">
-        <h3 class="inaguration">Join Us For Our Inaguration Week!!</h3>
-    </marquee>
+
+      <marquee
+        scrollamount="15"
+        behavior="scroll"
+        direction="left"
+        class="inaguration_scroll"
+      >
+        <h3 class="inaguration">Join Us For Our Inaguration Week!!!</h3>
+      </marquee>
     </header>
 
-      <main>
-        <div class="menu">
-            <h1>Daily Specials</h1>
-            <div class="breakfast" >
-                <div class="breakfastCombo" >
-                    <h2>Monday Special</h2>
-                    <img src="./imgs/breakfast.jpeg" alt="Breakfast Combo 1">
-                    <h4>$15</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum excepturi </p>
-                </div>
-                <div class="breakfastCombo" >
-                    <h2>Tuesday Special</h2>
-                    <img src="./imgs/breakfast.jpeg" alt="Breakfast Combo 2">
-                    <h4>$15</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum .</p>
-                </div>
-                <div class="breakfastCombo" >
-                    <h2>Wednesday Special</h2>
-                    <img src="./imgs/breakfast.jpeg" alt="Breakfast Combo 3">
-                    <h4>$15</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum excepturi </p>
-                </div>
-            </div>
+    <main>
+      <div class="menu">
+        <h1>Daily Specials</h1>
+        <div class="breakfast">
+          <div class="breakfastCombo">
+            <h2>Monday Special</h2>
+            <img name="dealOfDay" />
+            <h4>$15</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Perspiciatis voluptatum excepturi
+            </p>
+          </div>
         </div>
-
-        <div class="menu">
-            
-            <div class="lunch" >
-                <div class="lunchCombo" >
-                    <h2>Thursday Special</h2>
-                    <img src="./imgs/breakfast.jpeg" alt="Breakfast Combo 1">
-                    <h4>$15</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum excepturi </p>
-                </div>
-                <div class="lunchCombo" >
-                    <h2>Friday Special</h2>
-                    <img src="./imgs/breakfast.jpeg" alt="Breakfast Combo 2">
-                    <h4>$15</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum excepturi </p>
-                </div>
-                <div class="lunchCombo" >
-                    <h2>Saturday Special</h2>
-                    <img src="./imgs/breakfast.jpeg" alt="Breakfast Combo 3">
-                    <h4>$15</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum excepturi </p>
-                </div>
-            </div>
-        </div>
-
-        
-             
-        
-     
-      </main>
-
-    
-      <footer>
-        <ul>
-            <li><a href="">Terms And Condition</a></li>
-            <li><a href="./Location.html">Location</a></li>
-        </ul>
-      </footer>
-      <p class="created">Developed By: Antonio Rosales</p>
       </div>
-  
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="">Terms And Condition</a></li>
+        <li><a href="./Location.html">Location</a></li>
+      </ul>
+    </footer>
+
+    <script>
+      var i = 0;
+      var dealOfDay1 = [];
+      var time = 1000;
+
+      dealOfDay1[0] = `./imgs/breakfast.jpeg`;
+      dealOfDay1[1] = `./imgs/sandwhich.jpg`;
+      dealOfDay1[2] = `./imgs/breakfast.jpeg`;
+      dealOfDay1[3] = `./imgs/sandwhich.jpg`;
+
+      function changeImg() {
+        document.dealOfDay.src = dealOfDay1[i];
+        if (i < dealOfDay.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+      window.onload = changeImg;
+    </script>
   </body>
 </html>

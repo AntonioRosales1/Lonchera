@@ -1,41 +1,64 @@
 body {
   background-color: #8b0000;
-  font-family: fantasy;
+  font-family: "PT Serif", serif;
 }
 img {
   width: 60%;
   height: 60%;
 }
+p {
+  color: antiquewhite;
+  font-size: 35px;
+}
 a {
-  color: black;
+  color: antiquewhite;
   text-decoration: none;
 }
 h4 {
-  color: black;
+  color: #a30606;
+  font-size: 35px;
+  margin: auto;
 }
-marquee {
-  color: black;
-  font-size: 25px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* border-bottom: solid black 2px; */
+h3 {
+  margin: auto;
+}
+h2 {
+  color: #8b0000;
 }
 
+marquee {
+  color: black;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.img_logo {
+  width: 95px;
+  padding-right: 4%;
+}
 .inaguration_scroll {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  background-color: antiquewhite;
 }
 
 header {
   font-size: 27px;
   border-bottom: solid black 5px;
+  /* background-image: linear-gradient(rgb(201 184 183 / 48%), rgb(82 32 28 / 16%)),
+    url(/imgs/headerBackImg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+  background-size: cover; */
 }
 .tittle {
   color: black;
   font-size: 75px;
   border-bottom: solid black 5px;
   padding-bottom: 50px;
+  padding-right: 11%;
+  margin: auto;
 }
 
 header ul {
@@ -52,7 +75,7 @@ header ul li:hover {
   scale: 1.2;
 }
 main {
-  background-color: black;
+  background-color: rgb(31, 29, 29);
 }
 h1 {
   font-size: 50px;
@@ -60,7 +83,6 @@ h1 {
   text-align: center;
   padding-top: 50px;
   color: #8b0000;
-  /* text-decoration: underline 2px yellow; */
 }
 .breakfast {
   padding-top: 145px;
@@ -73,14 +95,9 @@ h1 {
 .breakfastCombo {
   width: 23%;
   font-size: 25px;
-  background-color: #8b0000;
   padding-bottom: 120px;
 }
-/* .breakfast .breakfastCombo:hover {
-  opacity: 1.5;
-  scale: 1.2;
-  cursor: pointer;
-} */
+
 .lunch {
   padding-top: 145px;
   display: flex;
@@ -91,14 +108,9 @@ h1 {
 .lunchCombo {
   width: 23%;
   font-size: 25px;
-  background-color: #8b0000;
   padding-bottom: 120px;
 }
-/* .lunch .lunchCombo:hover {
-  opacity: 1.5;
-  scale: 1.2;
-  cursor: pointer;
-} */
+
 .dinner {
   padding-top: 145px;
   display: flex;
@@ -109,31 +121,26 @@ h1 {
 .dinnerCombo {
   width: 23%;
   font-size: 25px;
-  background-color: #8b0000;
   padding-bottom: 120px;
 }
-/* .dinner .dinnerCombo:hover {
-  opacity: 1.5;
-  scale: 1.2;
-  cursor: pointer;
-} */
+
 .drinks {
   color: #8b0000;
-  font-size: 30px;
 }
 
 .drinks ul {
-  display: flex;
+  display: block;
   justify-content: space-evenly;
   margin: auto;
   padding-bottom: 15%;
+  text-align: center;
 }
 .drinks ul li {
-  list-style: square;
-  padding-top: 10%;
+  list-style: none;
+  padding-bottom: 1.5%;
+  font-size: 35px;
 }
 .comments {
-  /* background-color: aliceblue; */
   display: block;
   text-align: center;
   justify-content: space-between;
@@ -156,14 +163,20 @@ footer ul li:hover {
   opacity: 0.5;
   scale: 1.2;
 }
-.created {
-  color: black;
-  font-size: 20px;
+
+.location {
+  text-align: center;
 }
 .map {
   padding-top: 145px;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  padding-bottom: 145px;
+  padding-bottom: 110px;
+}
+.info {
+  width: max-content;
+  margin: auto;
+  padding-bottom: 110px;
+}
+.info p {
+  margin: 1rem 0;
+  text-align: left;
 }
