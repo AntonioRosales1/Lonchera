@@ -32,6 +32,9 @@ marquee {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.sp {
+  display: none;
+}
 .img_logo {
   width: 95px;
   padding-right: 4%;
@@ -75,7 +78,7 @@ header ul li:hover {
   scale: 1.2;
 }
 main {
-  background-color: rgb(31, 29, 29);
+  background-color: black;
 }
 h1 {
   font-size: 50px;
@@ -83,6 +86,10 @@ h1 {
   text-align: center;
   padding-top: 50px;
   color: #8b0000;
+}
+/* menu */
+.menu-btn {
+  display: none;
 }
 .breakfast {
   padding-top: 145px;
@@ -179,4 +186,96 @@ footer ul li:hover {
 .info p {
   margin: 1rem 0;
   text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  /* dropdown menu */
+
+  header .sp-menu .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+  }
+
+  .sp-menu .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .sp-menu .menu-icon .navicon:before,
+  .sp-menu .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .sp-menu .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .sp-menu .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .sp-menu .menu-btn {
+    display: none;
+  }
+
+  .sp-menu .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .sp-menu .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .sp-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .sp-menu .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .sp-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .sp-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  .breakfast,
+  .lunch,
+  .dinner {
+    display: block;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .breakfastCombo,
+  .lunchCombo,
+  .dinnerCombo {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  h1 {
+    padding-top: 50px;
+  }
 }
