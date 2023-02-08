@@ -13,10 +13,11 @@
   <body>
     <header class="pc">
        
-        <h1 class="tittle"><img class="img_logo" src="./imgs/Logo.svg" alt="">Lonchera</h1>
+        <h1 class="tittle"><img class="img_logo" src="./imgs/Logo.svg" alt="">A Little Of Everything</h1>
+
       <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./spanish.html">Espanol</a></li>
+        <li><a href="./spanish.html">Espanol</a></li>   
         <li><a href="./deals.html">Daily Specials</a></li>
         <li><a href="./Location.html">Location</a></li>     
      </ul>
@@ -27,18 +28,29 @@
     </header>
 
     <!-- smartphone menu  -->
-    <header class="sp sp-menu">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./spanish.html">Espanol</a></li>
-            <li><a href="./deals.html">Daily Specials</a></li>
-            <li><a href="./Location.html">Location</a></li>     
-        </ul>
+    <header class="sp">
+        <h1 class="tittle"><img class="img_logo" src="./imgs/Logo.svg" alt="">Lonchera</h1>
+
+        <div class="sp-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+            <div class="menu-content">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./spanish.html">Espanol</a></li>
+                    <li><a href="./deals.html">Daily Specials</a></li>
+                    <li><a href="./Location.html">Location</a></li>     
+                 </ul>
+            </div>
+        </div>
+
+        <marquee scrollamount="15" behavior="scroll" direction="left" class="inaguration_scroll">
+            <h3 class="inaguration">Join Us For Our Inaguration Week!!!</h3>
+        </marquee>
+    
     </header>
-
-
+    
       <main>
         <div class="menu">
             <h1 >Breakfast</h1>
@@ -115,7 +127,7 @@
             <h1>Drinks</h1>
             <ul>
                 <li>$3.50 Orchata</i>
-                <li>$3.s50 Ague De Pina</li>
+                <li>$3.50 Ague De Pina</li>
                 <li>$1.50 Coke</li>
                 <li>$1.50 soda</li>
                 <li>$1.50 soda</li>
@@ -128,10 +140,14 @@
 
     
       <footer>
-        <ul>
-            <li><a href="">Terms And Condition</a></li>
-            <li><a href="./Location.html">Location</a></li>
-        </ul>
+         
+        <h1 class="tittle_footer"><img class="img_logo" src="./imgs/Logo.svg" alt="">A Little Of Everything</h1>
+        <p>Phone Number: (720) 000 0000</p>
+        <p>Email: lalalalal@gmail.com</p>
+        <div class="social_logos">
+            <img src="./imgs/Fblogo.svg" alt="Find us on Fb">
+            <img src="./imgs/instagram.svg" alt="">
+          </div>
       </footer>
       </div>
   

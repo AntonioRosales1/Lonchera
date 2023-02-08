@@ -87,10 +87,6 @@ h1 {
   padding-top: 50px;
   color: #8b0000;
 }
-/* menu */
-.menu-btn {
-  display: none;
-}
 .breakfast {
   padding-top: 145px;
   display: flex;
@@ -152,25 +148,13 @@ h1 {
   text-align: center;
   justify-content: space-between;
 }
-footer {
-  text-align: center;
-  display: block;
+.tittle_footer {
+  color: black;
+  font-size: 75px;
+  padding-bottom: 50px;
+  padding-right: 11%;
+  margin: auto;
 }
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-footer ul li {
-  border-radius: 1px;
-  padding: 6px;
-  font-size: 25px;
-}
-footer ul li:hover {
-  opacity: 0.5;
-  scale: 1.2;
-}
-
 .location {
   text-align: center;
 }
@@ -197,67 +181,116 @@ footer ul li:hover {
     display: block;
   }
 
+  h1 {
+    padding-top: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
   /* dropdown menu */
 
-  header .sp-menu .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
+  .menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
   }
-
-  .sp-menu .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background 0.2s ease-out;
-    width: 18px;
-  }
-
-  .sp-menu .menu-icon .navicon:before,
-  .sp-menu .menu-icon .navicon:after {
-    background: #333;
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
     content: "";
     display: block;
-    height: 100%;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
     position: absolute;
-    transition: all 0.2s ease-out;
-    width: 100%;
+  }
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+  .menu-btn span:after {
+    top: 8px;
   }
 
-  .sp-menu .menu-icon .navicon:before {
-    top: 5px;
+  #menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
   }
-
-  .sp-menu .menu-icon .navicon:after {
-    top: -5px;
+  #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
   }
-
-  .sp-menu .menu-btn {
-    display: none;
-  }
-
-  .sp-menu .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-
-  .sp-menu .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-
-  .sp-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+  #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
     transform: rotate(-45deg);
   }
 
-  .sp-menu .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
+  #menu-btn-check {
+    display: none;
   }
 
-  .sp-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .sp-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #000;
+  }
+  .menu-content ul {
+    padding: 70px 10px 0;
+  }
+  .menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+  }
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+  }
+  .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+  }
+
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #000;
+    transition: all 0.5s;
+  }
+
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;
+  }
+
+  header ul {
+    display: block;
   }
 
   .breakfast,
@@ -275,7 +308,7 @@ footer ul li:hover {
     padding-bottom: 30px;
   }
 
-  h1 {
-    padding-top: 50px;
+  .map {
+    width: 100%;
   }
 }
