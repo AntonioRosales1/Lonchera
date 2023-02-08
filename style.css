@@ -92,13 +92,12 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  padding-bottom: 145px;
 }
 
 .breakfastCombo {
   width: 23%;
   font-size: 25px;
-  padding-bottom: 120px;
+  padding-bottom: 5%;
 }
 
 .lunch {
@@ -106,7 +105,6 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  padding-bottom: 145px;
 }
 .lunchCombo {
   width: 23%;
@@ -128,14 +126,14 @@ h1 {
 }
 
 .drinks {
-  color: #8b0000;
+  color: antiquewhite;
 }
 
 .drinks ul {
   display: block;
   justify-content: space-evenly;
   margin: auto;
-  padding-bottom: 15%;
+  padding-bottom: 2%;
   text-align: center;
 }
 .drinks ul li {
